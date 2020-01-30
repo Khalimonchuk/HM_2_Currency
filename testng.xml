@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Regression Testing Suite" verbose="1" parallel="false">
+
+    <listeners>
+        <listener class-name="com.lits.maksymuk.TestListener"/>
+    </listeners>
+
+    <test name="Calculator Test"  >
+
+        <packages>
+            <package name="com.lits.maksymuk.calculator"></package>
+        </packages>
+    </test>
+
+    <test name="App Test"  >
+
+        <packages>
+            <package name="com.lits.maksymuk.app"></package>
+        </packages>
+    </test>
+</suite>

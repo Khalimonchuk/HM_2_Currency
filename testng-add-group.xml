@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Regression Testing Add Operation Suite" verbose="1" parallel="false">
+
+<!--    <listeners>-->
+<!--        <listener class-name=""/>-->
+<!--    </listeners>-->
+
+    <test name="Add group tests"  >
+
+        <groups>
+            <run>
+                <include name="add" />
+            </run>
+        </groups>
+
+        <packages>
+            <package name="com.lits.maksymuk.calculator"></package>
+        </packages>
+    </test>
+
+</suite>
